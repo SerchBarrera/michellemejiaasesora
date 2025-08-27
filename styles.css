@@ -1,0 +1,103 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #0A2F5C;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.catalogo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 350px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+}
+
+.carousel img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: none;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
+.info {
+  padding: 20px;
+}
+
+.info h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #0A2F5C;
+}
+
+.info p {
+  margin: 5px 0;
+  color: #333;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  background: #0A2F5C;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.social a:hover {
+  background: #FF6B35;
+}
